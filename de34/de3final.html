@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
+<head><link rel="stylesheet" href="./css/style.css">
     
     <title>kinya デザイン演習Ⅲ・Ⅳ　最終課題</title>
 </head>
     <h1>忘れ物防止リマインダー＆タグ</h1>
 
 <h2>1.スケッチ</h2>
-<p><img src="./images/LINE_ALBUM_2023.5.22_230526_0.jpg" width="65%"><br>
-    <img src="./images/LINE_ALBUM_2023.5.22_230526_1.jpg" width="65%"><br>
+<p><img src="./images/LINE_ALBUM_2023.5.22_230526_0.jpg" width="55%"><br>
+    <img src="./images/LINE_ALBUM_2023.5.22_230526_1.jpg" width="55%"><br>
     ↑Drawn by イシズカアヤネ
 </p>
 <h2>2.概要</h2>
@@ -27,15 +27,31 @@
     <li>データを取る</li>
     <li>システム構築</li>
     <li>通知設定</li>
-    <li></li>
 </ol>
 </p>
 <h2>4.使用品</h2>
 <p><ul>
-    <li><a href="https://www.airis1.co.jp/item/c6f3709b-0c49-4383-8cd7-0f6b4c36ea68/detail" target="_blank">タッチセンサー</a></li>
     <li><a href="" target="_blank">esp32(ボード)</a></li>
+    <li>パソコン</li>
+    <li>スマートホン</li>
 </ul></p>
-<h2>5.</h2>
-<p></p>
+<h2>5.ステップ</h2>
+<p><li>どのセンサーを使用するか(赤外線・圧力・静電気etc)<br>
+→感知に左右されないタッチセンサーを採用<br>
+→●Arduino用ボタンを購入<br>
+→●EasyPlugで接続→不可<br>
+→●esp32(ボード)を購入</li>
+<li>何に通知を送るか<br>
+→LINE Notifyを採用</li>
+<li>タッチすると通知を送るArduinoのコード<br>
+→センサーにタッチするまで１分ごとにLINE１通送るプログラムと<br>
+センサーにタッチすることで通知が止まるプログラムを作成<br>
+→モバイルバッテリーを使用<br>
+→●3Dプリンタでのesp32と電源をいれてモノにつけることができるケースを作る</li>
+<br>
+<h2>6.完成品動画</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e7kAiKuyv8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+
+</p>
 </body>
 </html>
